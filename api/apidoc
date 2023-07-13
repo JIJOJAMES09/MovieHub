@@ -1,0 +1,43 @@
+register
+ =======
+ localhost:8000/api/register/
+ method:post
+ data:{username,email,password}
+
+
+token
+======
+ url:localhost:8000/api/token/
+ method:post
+ data:{username,password}
+ status:completed
+
+
+movielist
+=====
+ localhost:8000/api/movies/
+ method:get
+ authentication:Token
+ status:pending
+
+moviedetail
+=======
+ localhost:8000/api/movies/{id}/
+ method:get
+ authentication:Token
+
+
+addreview
+===========
+ localhost:8000/api/movies/{id}/add_review/
+ method:post
+ data:{comment,rating}
+ authentication:Token
+
+
+edit review
+============
+
+
+delete
+=======
